@@ -1,0 +1,147 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Formulario de Transportistas"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:textColor="#D32F2F"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Codigo:"
+        android:layout_gravity="fill_vertical"
+        />
+
+    <EditText
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:hint="1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cédula:"
+        android:layout_gravity="fill_vertical"
+        />
+
+    <EditText
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:hint="1750363325" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:layout_gravity="fill_vertical"
+        />
+
+    <EditText
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:hint="Juan Perez" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Nacimiento:"
+        android:layout_gravity="fill_vertical"
+        />
+
+    <EditText
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:hint="dd/mm/aaaa" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teléfono Convencional:"
+        android:layout_gravity="fill_vertical"
+        />
+
+    <EditText
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:hint="2736666" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teléfono Celular:"
+        android:layout_gravity="fill_vertical"
+        />
+
+    <EditText
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:hint="0991646250" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo Eletrónico:"
+        android:layout_gravity="fill_vertical"
+        />
+
+    <EditText
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:hint="correo@hotmail.com" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dirección:"
+        android:layout_gravity="fill_vertical"
+        />
+
+    <EditText
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:hint="Mi dirección de vivienda" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Placa Camión:"
+        android:layout_gravity="fill_vertical"
+        />
+
+    <EditText
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:hint="PBB-7758" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo Camión:"
+        android:layout_gravity="fill_vertical"
+        />
+
+    <EditText
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:hint="Articulado" />
+
+    <Button
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:text="Registrar" />
+
+    <Button
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:text="Listar" />
+
+    <Button
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:text="Buscar" />
+    <Button
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:text="Eliminar" />
+
+</LinearLayout>
