@@ -1,0 +1,139 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/validations.js"></script>
+    <title>Formulario Cliente</title>
+</head>
+
+<body>
+    <div class="modal-body text-center">
+        <form name="Client" method="post" action="../php/customer.php">
+            <div class="col-sm-8 main-section mx-auto">
+                <div class="modal-content">
+                    <div class="col-33 ">
+                        <form class="col-33"><br>
+                            <table class="table">
+
+                                <head>
+                                    <div class="styletittle">
+                                        Formulario de Clientes
+                                    </div>
+                                </head>
+                                <br>
+                                        <div class = "ImaCustomer">
+                                                <IMG SRC="../images/customer.JPG" width="200"><br>
+                                        </div>
+                                <tbody>
+                                    <tr>
+                                        <div class="form-group">
+                                            <td>
+                                                <div class="label">Cédula: </div>
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" name="idcustomer" id="idcustomer" placeholder="1714678823" onchange="if (!validarDocumento())  cleanCI();" onkeypress="return validatenumbers(event)" onpaste="return false">
+                                            </td>
+                                            <td>
+                                                <input type="submit" class="btn btn-primary btn-block center " name="option" value="Buscar" style="background-color: rgb(52, 162, 212);">
+                                            </td>
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                        <div class="form-group">
+                                            <td>
+                                                <div class="label">Nombre: </div>
+                                            </td>
+
+                                            <td>
+                                                <input type="text" class="form-control" name="namecustomer" placeholder="Juan Perez" onkeypress="return validateletters(event)" onpaste="return false" onfocus="return false" >
+                                            </td>                                          
+                                            <td>
+                                                <input type="submit" class="btn btn-primary btn-block center " name="option" value="Eliminar" style="background-color: rgb(52, 162, 212);">
+                                            </td>
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                        <div class="form-group">
+                                            <td>
+                                                <div class="label">RUC: </div>
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" name="ruccustomer" id="ruccustomer" placeholder="012345678901" onkeypress="return validatenumbers(event)" onpaste="return false">
+                                           </td>
+                                            <td>
+                                                <input type="submit" class="btn btn-primary btn-block center " name="option" value="Modificar" style="background-color: rgb(52, 162, 212);">
+                                            </td>
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                        <div class="form-group">
+                                            <td>
+                                                <div class="label">Fono Convencional: </div>
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" name="fono1customer" id="id" placeholder="2736666" onkeypress="return validatenumbers(event)" onpaste="return false" >
+                                            </td>
+                                            <td>
+                                                <input type="submit" class="btn btn-primary btn-block center " name="option" value="Registrar" style="background-color: rgb(52, 162, 212);">
+                                            </td>
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                        <div class="form-group">
+                                            <td>
+                                                <div class="label">Número celular: </div>
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" name="fono2customer" id="id" placeholder="0998764876" onkeypress="return validatenumbers(event)" onpaste="return false" >
+                                            </td>
+                                            <td> 
+                                                <input type="submit" class="btn btn-primary btn-block center " name="option" value="Ver Clientes" style="background-color: rgb(52, 162, 212);">          
+                                            </td>
+
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                        <div class="form-group">
+                                            <td>
+                                                <div class="label">Correo Electrónico: </div>
+                                            </td>
+                                            <td><input type="email" class="form-control" name="emailCustomer" id="emailCustomer" placeholder="espe@ccccc.cc" ></td>
+                                            
+
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                        <div class="form-group">
+                                            <td>
+                                                <div class="label">Dirección: </div>
+                                            </td>
+                                            <td><textarea class="form-control textarea-client" name="addressCustomer" id="addressCustomer" placeholder="Mi dirección de vivienda" ></textarea></td>
+
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                        <td>            
+                                        </td>
+                                        
+                                        <td>
+                                                <center >
+                                                        <a href="home.html">Menú Principal</a>
+                                                </center>
+                                                
+                                        </td>      
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </form>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/validations.js"></script>
+    <script src="../php/json.php"></script>
+    <title>Formulario Producto</title>
+</head>
+
+<body>
+    <div class="modal-body text-center">
+        <form name="Product" method="post" action="../php/product.php">
+            <div class="col-sm-8 main-section mx-auto">
+                <div class="modal-content">
+                    <div class="col-33 ">
+                        <form class="col-33"><br>
+                            <table class="table">
+
+                                <head>
+                                    <div class="styletittle">
+                                        Producto
+                                    </div>
+                                </head>
+                                <tbody>
+
+                                    <tr>
+                                        <br>
+                                        <IMG SRC="../images/product1.png"><br><br><br>
+                                        <div class="form-group">
+                                            <td>
+                                                <div class="label">Id Producto: </div>
+                                            </td>
+                                            <td><input type="text" class="form-control" name="idproduct" id="idproduct" placeholder="01" onkeypress="return validatenumbers(event)" onpaste="return false"></td>
+
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                        <div class="form-group">
+                                            <td>
+                                                <div class="label">Nombre: </div>
+                                            </td>
+                                            <td><input type="text" class="form-control" name="nameproduct" placeholder="Lavadora" onkeypress="return soloLetras(event)" onsubmit="return verificaUser();" onpaste="return false" onfocus="return false"></td>
+
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                        <div class="form-group">
+                                            <td>
+                                                <div class="label">Descripci&oacute;n: </div>
+                                            </td>
+                                            <td><select class="form-control" name="selectDescription">
+                                              <br><option value="Pesado" selected>Pesado</option><br>
+                                              <br><option value="Liviano" >Liviano</option><br>
+                                            </select></td>
+
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                        <div class="form-group">
+                                            <td>
+                                                <div class="label">Peso: </div>
+                                            </td>
+                                            <td><input type="text" class="form-control" name="weightproduct" placeholder="30.0" onkeypress="return validatedoubles(event)" onsubmit="return verificaUser();" onpaste="return false" onfocus="return false"></td>
+
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                        <div class="form-group">
+                                            <td>
+                                                <div class="label">Sensibilidad: </div>
+                                            </td>
+                                            <td><select class="form-control" name="selectSen">
+                                              <br><option value="Fragil"selected>Fr&aacute;gil</option><br>
+                                              <br><option value="No fragil" >No fr&aacute;gil</option><br>
+                                            </select></td>
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                        <div class="form-group">
+                                            <td>
+                                                <div class="label">Valor Unitario: </div>
+                                            </td>
+                                            <td><input type="text" class="form-control" name="unityValueproduct" placeholder="500.0" onkeypress="return validatedoubles(event)" onsubmit="return verificaUser();" onpaste="return false" onfocus="return false"></td>
+                                        </div>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <table class="table">
+
+                                <body>
+                                    <tr>
+                                        <div class="form-group">
+                                            <td>
+                                                <input style="background-color: rgb(52, 162, 212);" class="btn btn-primary btn-block  center " type="submit" class="" name="option" value="Registrar">
+                                            </td>
+                                            <td>
+                                                <input style="background-color: rgb(52, 162, 212);" type="submit" class="btn btn-primary btn-block center " name="option" value="Modificar">
+                                            </td>
+                                            <td>
+                                                <input style="background-color: rgb(52, 162, 212);" type="submit" class="btn btn-primary btn-block center " name="option" value="Eliminar">
+                                            </td>
+                                            <td>
+                                                <input style="background-color: rgb(52, 162, 212);" type="submit" class="btn btn-primary btn-block center " name="option" value="Buscar">
+                                            </td>
+                                            <td>
+                                                <input style="background-color: rgb(52, 162, 212);" type="submit" class="btn btn-primary btn-block center " name="option" value="Ver registros">
+                                            </td>
+
+                                        </div>
+                                        <td>
+                                            <center>
+                                                <a input style="background-color: rgba(41, 11, 214, 0);" type="submit" class="btn btn-primary btn-block center " name="option" href=" home.html ">Men&uacute Principal</a>
+                                            </center>
+
+                                        </td>
+
+                                    </tr>
+                                </body>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../css/styles.css">
+		<script src="../js/validations.js"></script>
+        <title>Quienes Somos</title>
+    </head>
+    <body>
+        <div id="contenedor">
+
+            <table class= "table" border="1"  id="tabla">
+				<head>
+                                    <div class="styletittle">
+                                        Conozca del Negocio
+                                    </div>
+                                </head>
+                <thead>
+                    <tr class="table-primary">
+                        <td>Nombre</td>
+                        <td>URL</td>
+                        <td>Publicado el</td>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+        </div>
+        <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+        <script>
+            var nextPageToken = "";
+            // Resultados por pagina
+            var resPorPagina = 10;
+            // Paginas a mostrar
+            var paginas = 2;
+            var key = "AIzaSyDeULAp5LqiVu6VahO9hsmbJ-HM6Zwkf_M";
+            var idCanal = "UCoW0jViGElwqz3XUcJZqLHQ";
+            var url = "https://www.googleapis.com/youtube/v3/search?key=" + key + "&channelId=" + idCanal + "&part=snippet,id&order=date&maxResults=" + resPorPagina;
+            //$("#contenedor").append(url);
+            $.getJSON(url, function (data) {
+
+                for (var k in data.items) {
+                    var tituloVideo=data.items[k]["snippet"].title;
+                    var urlVideo="https://www.youtube.com/watch?v=" + data.items[k]["id"].videoId ; 
+                    var fechaVideo=data.items[k]["snippet"].publishedAt;
+                    
+                    console.log(k, data.items[k]["id"].videoId);
+                    //$('#tabla tr:last').after('<tr>'+tituloVideo+'</tr><tr>'+urlVideo+'</tr><tr>'+fechaVideo+'</tr>');
+                    $("table tbody").append('<tr><td>'+tituloVideo+'</td><td><a href="'+urlVideo+'">'+urlVideo+'</a>"</td><td>'+fechaVideo+'</td></tr>');
+                }
+
+            });
+        </script>
+    </body>
+</html>
