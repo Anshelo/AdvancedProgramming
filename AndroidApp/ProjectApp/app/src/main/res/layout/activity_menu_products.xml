@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuCarrier">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRODUCT"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/productos" />
+
+    <EditText
+        android:id="@+id/edit_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID: "
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre:"
+        android:inputType="textPassword"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:text="Descripcion"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spnDescription"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:hint="Tipo Camion:" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edit_Weigth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Peso"
+        android:inputType="text"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:text="Sensibilidad: "
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spnSensibility"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:hint="Sensibilidad" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edit_Value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor Unitario:"
+        android:inputType="text"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="REGISTRAR"
+            android:textSize="15sp"
+            />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Buscar"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Eliminar"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnList"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Listar"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

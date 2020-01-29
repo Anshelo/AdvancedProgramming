@@ -1,3 +1,0 @@
-hostname:dbinstance.cndtjrwnep9m.us-east-1.rds.amazonaws.com
-user:root
-password:12345678
